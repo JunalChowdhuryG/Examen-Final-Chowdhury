@@ -2,7 +2,7 @@ name: Examen Final
 
 on:
   push:
-    branches: [main,feature/*]
+    branches: [main,feature-*,test-pipeline]
   pull_request:
     branches: [main,feature/*]
 
@@ -37,8 +37,8 @@ jobs:
     # instalar tflint
     - name: Instalar tflint
       run: |
-        sudo apt-get update
-        sudo apt-get install -y tflint
+        apt-get update
+        apt-get install -y tflint
     # ejecutar tflint en carpeta iac
     - name: ejecutar tflint
       run: |
