@@ -30,6 +30,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
   test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
+    steps:
     # ejecutar flake8
     - name: Run flake8
       run: |
