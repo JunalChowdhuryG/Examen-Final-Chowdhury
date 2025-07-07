@@ -33,15 +33,6 @@ jobs:
     - name: Run flake8
       run: |
         flake8
-    
-    # instalar tflint
-    - name: Instalar tflint
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y tflint
     # ejecutar tflint en carpeta iac
-    - name: ejecutar tflint
-      run: |
-        cd iac
-        tflint --init
-        tflint
+    - name: Run Tfsec
+      uses: aquasecurity/tfsec-action@v1.0.0
