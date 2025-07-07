@@ -1,0 +1,17 @@
+
+services:
+  producto:
+    build:
+      context: .
+      dockerfile: ./servicio-producto/Dockerfile
+    ports:
+      - "8000:8000"
+
+  user:
+    build:
+      context: .
+      dockerfile: ./servicio-usuario/Dockerfile
+    ports:
+      - "8001:8001"
+
+
