@@ -7,7 +7,7 @@ on:
     branches: [main,feature/*]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -29,13 +29,15 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+  test:
     # ejecutar flake8
     - name: Run flake8
       run: |
         flake8
     
-    # ejecutar tflint
+    # ejecutar tflint en carpeta iac
     - name: ejecutar tflint
       run: |
+        cd iac
         tflint --init
         tflint
