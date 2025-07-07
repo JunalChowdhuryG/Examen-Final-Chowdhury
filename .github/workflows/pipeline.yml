@@ -35,3 +35,10 @@ jobs:
         flake8
     - name: Run Tfsec
       uses: aquasecurity/tfsec-action@v1.0.0
+    
+    # simular publicacion imagen docker en un registry local
+    - name: simular publicacion imagen Docker
+      run: |
+        echo "Simulando publicacion de imagen Docker en un registry local"
+        echo "docker build -t examen-final:latest ."
+        echo "imagen Docker examen-final:latest creada"
