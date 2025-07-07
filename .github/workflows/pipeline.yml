@@ -2,7 +2,7 @@ name: Examen Final
 
 on:
   push:
-    branches: [main,feature/*]
+    branches: [main,feature-*,test-pipeline]
   pull_request:
     branches: [main,feature/*]
 
@@ -33,6 +33,5 @@ jobs:
     - name: Run flake8
       run: |
         flake8
-    # ejecutar tflint en carpeta iac
     - name: Run Tfsec
       uses: aquasecurity/tfsec-action@v1.0.0
