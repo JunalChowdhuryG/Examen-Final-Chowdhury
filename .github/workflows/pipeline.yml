@@ -42,3 +42,7 @@ jobs:
         echo "Simulando publicacion de imagen Docker en un registry local"
         echo "docker build -t examen-final:latest ."
         echo "imagen Docker examen-final:latest creada"
+    
+    - name: simulo tests
+      run: |
+        echo "pytest tests/"
