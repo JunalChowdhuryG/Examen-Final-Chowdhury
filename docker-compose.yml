@@ -6,6 +6,8 @@ services:
       dockerfile: ./servicio-producto/Dockerfile
     ports:
       - "8000:8000"
+    volumes:
+      - ./servicio-producto:/app
 
   user:
     build:
@@ -13,5 +15,10 @@ services:
       dockerfile: ./servicio-usuario/Dockerfile
     ports:
       - "8001:8001"
+    volumes:
+      - ./servicio-usuario:/app
 
+volumes:
+  db_data:
+    driver: local
 
