@@ -2,6 +2,7 @@
 **Alumno:** `Chowdhury Gomez, Junal`
 **Codigo:** `20200092K`
 
+![](https://github.com/JunalChowdhuryG/Examen-Final-Chowdhury/actions/workflows/pipeline.yml/badge.svg)
 
 ## **1. Modulos de Terraform**
 
@@ -30,11 +31,5 @@
 * Con volummenes para persistencia de datos
 
 
-
-
-
-
-
-
-
+**"Declaro que esta entrega fue realizada sin ayuda externa ni herramientas automaticas"**
 
